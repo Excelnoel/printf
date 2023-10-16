@@ -1,15 +1,15 @@
-#include "holberton.h"
+#include "Emmanuel.h"
 /**
-* print_int - function that prints an integer
-* @i: integer to print
+* print_dec - function that prints an decimal
+* @d: integer to print
 * Descriptions: prints digit with _putchar
 * Return: size the output text
 */
-int print_int(va_list i)
+int print_dec(va_list d)
 {
 	int len, powten, j, digit, n, count = 0, num;
 
-	n = va_arg(i, int);
+	n = va_arg(d, int);
 	if (n != 0)
 	{
 		if (n < 0)

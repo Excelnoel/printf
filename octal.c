@@ -1,35 +1,35 @@
-#include "holberton.h"
+#include "Emmanuel.h"
 /**
-* print_unsig - function that prints unsigned number
-* @u: unsigned number
-* Descriptions: prints unsigned number with putchar
+* print_octal - unsigned int argument is converted to unsigned octal
+* @o: unsigned to be converted
+* Descriptions: prints unsigned octal
 * Return: size the output
 */
-int print_unsig(va_list u)
+int print_octal(va_list o)
 {
 	unsigned int len, powten, j, digit, n, num;
 	int count = 0;
 
-	n = va_arg(u, unsigned int);
+	n = va_arg(o, unsigned int);
 	if (n != 0)
 	{
 		num = n;
 		len = 0;
 		while (num != 0)
 		{
-			num /= 10;
+			num /= 8;
 			len++;
 		}
 		powten = 1;
 		for (j = 1; j <= len - 1; j++)
-			powten *= 10;
+			powten *= 8;
 		for (j = 1; j <= len; j++)
 		{
 			digit = n / powten;
 			_putchar(digit + '0');
 			count++;
 			n -= digit * powten;
-			powten /= 10;
+			powten /= 8;
 		}
 	}
 	else
