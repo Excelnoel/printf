@@ -15,6 +15,10 @@ int octal(va_list o);
 int little_x(va_list x);
 int big_x(va_list X);
 int rot_thirteen(va_list R);
+int unsignedint(unsigned int n, char *buff, int *tb, int *b, char t);
+int handlestr(char *s, char *buffer, int *tb, int *b);
+int handleint(int n, char *buffer, int *tb, int *b);
+int noncustomspecifier(va_list args, char c, char *buffer, int *tb, int *b);
 
 
 /**int hexadecimal(va_list h)
