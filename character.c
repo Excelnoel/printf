@@ -1,13 +1,13 @@
-#include "Emmanuel.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_char - writes the character c to stdout
+ * character - writes the character c to stdout
  * @c: The character to print
  *
  * Return: 1.
  */
-int print_char(va_list c)
+int character(va_list c)
 {
 	unsigned char my_char;
 

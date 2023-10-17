@@ -1,12 +1,12 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include "Emmanuel.h"
+#include "main.h"
 /**
 * print_bin - convert to binary
 * @b: number in decinal
 * Return: number of chars printed
 */
-int print_bin(va_list b)
+int binary(va_list b)
 {
 	unsigned int len, powten, j, digit, n, num;
 	int count = 0;

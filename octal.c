@@ -1,11 +1,11 @@
-#include "Emmanuel.h"
+#include "main.h"
 /**
-* print_octal - unsigned int argument is converted to unsigned octal
+* octal - unsigned int argument is converted to unsigned octal
 * @o: unsigned to be converted
 * Descriptions: prints unsigned octal
 * Return: size the output
 */
-int print_octal(va_list o)
+int octal(va_list o)
 {
 	unsigned int len, powten, j, digit, n, num;
 	int count = 0;

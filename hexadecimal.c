@@ -1,12 +1,12 @@
-#include "Emmanuel.h"
+#include "main.h"
 /**
-* print_hex - function that prints an unsigned int in hexadecimal
+* hexadecimal - function that prints an unsigned int in hexadecimal
 * @n: unsigned to be printed
 * @c: case of printing (0 = lower, 1 = upper)
 * Descriptions: prints unsigned in hexadecimal with _putchar
 * Return: size the output
 */
-int print_hex(unsigned int n, unsigned int c)
+int hexadecimal(unsigned int n, unsigned int c)
 {
 	unsigned int len, powten, j, digit, num;
 	int count = 0;
@@ -48,23 +48,23 @@ int print_hex(unsigned int n, unsigned int c)
 	return (count);
 }
 /**
-* print_x - takes an unsigned int an prints it in lowercase hex
+* little_x - takes an unsigned int an prints it in lowercase hex
 * @x: unsigned int to print
 * Descriptions: prints in lowercase hex with _putchar
 * Return: size of the output
 */
-int print_x(va_list x)
+int little_x(va_list x)
 {
-	return (print_hex(va_arg(x, unsigned int), 0));
+	return (hexadecimal(va_arg(x, unsigned int), 0));
 }
 /**
-* print_X - takes an unsigned int an prints it in uppercase hex
+* big_x - takes an unsigned int an prints it in uppercase hex
 * @X: unsigned int to print
 * Descriptions: prints in uppercase hex with _putchar
 * Return: size of the output
 */
-int print_X(va_list X)
+int big_x(va_list X)
 {
-	return (print_hex(va_arg(X, unsigned int), 1));
+	return (hexadecimal(va_arg(X, unsigned int), 1));
 }
 

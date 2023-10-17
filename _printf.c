@@ -1,6 +1,6 @@
 #include <stdarg.h>
 #include <unistd.h>
-#include "Emmanuel.h"
+#include "main.h"
 /**
   * find_function - function that finds formats for _printf
   * calls the corresponding function.
@@ -11,17 +11,17 @@ int (*find_function(const char *format))(va_list)
 {
 	unsigned int i = 0;
 	code_f find_f[] = {
-		{"c", print_char},
-		{"s", print_string},
-		{"i", print_int},
-		{"d", print_dec},
-		{"r", print_rev},
-		{"b", print_bin},
-		{"u", print_unsig},
-		{"o", print_octal},
-		{"x", print_x},
-		{"X", print_X},
-		{"R", print_rot13},
+		{"c", character},
+		{"s", string},
+		{"i", integer},
+		{"d", decimal},
+		{"r", revolver},
+		{"b", binary},
+		{"u", un_signed},
+		{"o", octal},
+		{"x", little_x},
+		{"X", big_x},
+		{"R", rot_thirteen},
 		{NULL, NULL}
 	};
 

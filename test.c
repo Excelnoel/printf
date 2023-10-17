@@ -1,6 +1,6 @@
 #include <limits.h>
 #include <stdio.h>
-#include "Emmanuel.h"
+#include "main.h"
 
 /**
  * main - Entry point
@@ -31,9 +31,10 @@ int main(void)
 	printf("String:[%s]\n", "I am a string !");
 	_printf("Len:[%d]\n", len);
 	printf("Len:[%d]\n", len2);
-	printf("=====================\n");
+/**	printf("=====================\n");
 	printf("*****CHAR*****\n");
 	printf("=====================\n");
+*/
 	printf("Expected   : %c\n", 'a');
 	_printf("Actual     : %c\n", 'a');
 	elen = printf("Expected   : %c\n", c);
@@ -48,9 +49,10 @@ int main(void)
 	_printf("Actual     : %c.\n", '\0');
 	printf("Expected   : %%%c\n", 'y');
 	_printf("Actual     : %%%c\n", 'y');
-	printf("=====================\n");
+/**	printf("=====================\n");
 	printf("*****STRINGS*****\n");
 	printf("=====================\n");
+*/
 	alen = elen = 0;
 	printf("Expected   : %s\n", "holberton");
 	_printf("Actual     : %s\n", "holberton");
