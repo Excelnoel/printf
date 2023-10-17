@@ -18,7 +18,6 @@ int rot_thirteen(va_list R);
 int unsignedint(unsigned int n, char *buff, int *tb, int *b, char t);
 int handlestr(char *s, char *buffer, int *tb, int *b);
 int handleint(int n, char *buffer, int *tb, int *b);
-int noncustomspecifier(va_list args, char c, char *buffer, int *tb, int *b);
 
 /**int hexadecimal(va_list h)
   * struct code_format - Struct format
