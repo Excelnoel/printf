@@ -19,6 +19,7 @@ int unsignedint(unsigned int n, char *buff, int *tb, int *b, char t);
 int handlestr(char *s, char *buffer, int *tb, int *b);
 int handleint(int n, char *buffer, int *tb, int *b);
 int noncustomspecifier(va_list args, char c, char *buffer, int *tb, int *b);
+int getflags(const char *format, int *i);
 
 
 /**int hexadecimal(va_list h)
