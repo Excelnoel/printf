@@ -21,6 +21,8 @@ int handleint(int n, char *buffer, int *tb, int *b);
 int noncustomspecifier(va_list args, char c, char *buffer, int *tb, int *b);
 int getflags(const char *format, int *i);
 int getprecision(const char *format, int *i, va_list list);
+int getsize(const char *format, int *i);
+int getwidth(const char *format, int *i, va_list list);
 
 
 /**int hexadecimal(va_list h)
