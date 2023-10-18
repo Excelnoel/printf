@@ -25,7 +25,7 @@ int handleint(int n, char *buffer, int *tb, int *b);
  * @f: The function associated
  * Description: Longer description
  */
-struct my_struct
+typedef struct my_struct
 {
 	char *sc;
 	int (*f)(va_list);
