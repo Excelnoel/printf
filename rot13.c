@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 /**
   * rot_thirteen - encodes a string into rot13.
   * @R: string to convert
