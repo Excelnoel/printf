@@ -19,13 +19,13 @@ int unsignedint(unsigned int n, char *buff, int *tb, int *b, char t);
 int handlestr(char *s, char *buffer, int *tb, int *b);
 int handleint(int n, char *buffer, int *tb, int *b);
 
-/**int hexadecimal(va_list h)
-  * struct code_format - Struct format
-  *
-  * @sc: The specifiers
-  * @f: The function associated
-  */
-typedef struct code_format
+/**
+ * struct my_struct - type defination of the structure of struct code_format
+ * @sc: The specifiers
+ * @f: The function associated
+ * Description: Longer description
+ */
+struct my_struct
 {
 	char *sc;
 	int (*f)(va_list);
